@@ -1,0 +1,85 @@
+:root {
+  --paper: #f7f8fa;
+  --ink: #1b2430;
+  --muted: #5c6875;
+  --accent: #1f5f5b;
+  --line: #d5dae0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* ---------- 12-column grid ---------- */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+.col-4 { grid-column: span 4; }
+.col-8 { grid-column: span 8; }
+
+/* ---------- Header ---------- */
+.header {
+  align-items: end;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: 3px solid var(--accent);
+}
+h1 {
+  margin: 0;
+  font: 700 clamp(2.2rem, 6vw, 3.4rem)/1.05 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}
+.role { margin: 8px 0 0; color: var(--muted); font-size: 1.1rem; }
+.contact p { margin: 0; }
+.contact { text-align: right; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- Sections ---------- */
+section { margin-bottom: 32px; }
+h2 {
+  margin: 0 0 12px;
+  font: 700 1.25rem/1.2 Georgia, serif;
+  color: var(--accent);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { margin: 0; font-size: 1.05rem; }
+.meta { margin: 0 0 4px; color: var(--muted); font-size: 0.9rem; }
+article { margin-bottom: 18px; }
+article p:last-child, section > p { margin-top: 4px; margin-bottom: 0; }
+
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  padding: 4px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Tablet & mobile: stack columns ---------- */
+@media (max-width: 768px) {
+  .col-m-12 { grid-column: span 12; }
+  .contact { text-align: left; margin-top: 16px; }
+  .page { padding: 32px 16px; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  body { background: #fff; }
+  .page { padding: 0; }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e9e6f7"/>
+      <stop offset="1" stop-color="#d7d0f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="618" cy="255" r="190" fill="#fff" opacity=".28"/>
+  <rect x="105" y="58" width="590" height="384" rx="18" fill="#fff"/>
+  <path d="M105 76a18 18 0 0 1 18-18h554a18 18 0 0 1 18 18v34H105z" fill="#f8f7fb"/>
+  <circle cx="132" cy="84" r="5" fill="#ed9a80"/>
+  <circle cx="150" cy="84" r="5" fill="#e6c071"/>
+  <circle cx="168" cy="84" r="5" fill="#8fc6a8"/>
+  <rect x="531" y="79" width="36" height="5" rx="3" fill="#c7c2d6"/>
+  <rect x="580" y="79" width="36" height="5" rx="3" fill="#c7c2d6"/>
+  <rect x="627" y="75" width="42" height="14" rx="7" fill="#544788"/>
+  <rect x="145" y="143" width="510" height="252" rx="14" fill="#29223f"/>
+  <circle cx="571" cy="214" r="70" fill="#6458a1" opacity=".75"/>
+  <circle cx="598" cy="189" r="26" fill="#edbd79"/>
+  <path d="M153 315h494v65H153z" fill="#383052"/>
+  <rect x="181" y="171" width="105" height="22" rx="11" fill="#5d5096"/>
+  <text x="197" y="186" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">WEBFEST 2026</text>
+  <text x="181" y="243" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="700">The web,</text>
+  <text x="181" y="287" fill="#b8e0d0" font-family="Arial,sans-serif" font-size="42" font-weight="700">together.</text>
+  <rect x="181" y="333" width="127" height="27" rx="7" fill="#a8d5c2"/>
+  <rect x="324" y="342" width="96" height="7" rx="3" fill="#a9a3bb"/>
+  <rect x="438" y="342" width="75" height="7" rx="3" fill="#a9a3bb"/>
+</svg>

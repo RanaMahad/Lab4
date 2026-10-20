@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 1rem;
+}
+
+.project-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.contact-form {
+  max-width: 650px;
+}
+
+.form-note {
+  color: #6c757d;
+  font-size: 0.9rem;
+}

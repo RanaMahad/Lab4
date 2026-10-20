@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f9eadb"/>
+      <stop offset="1" stop-color="#f2d4bc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="154" cy="374" r="107" fill="#fff" opacity=".3"/>
+  <rect x="214" y="38" width="372" height="424" rx="18" fill="#fff" opacity=".98"/>
+  <rect x="244" y="70" width="39" height="39" rx="12" fill="#dff1eb"/>
+  <path d="M256 89h15M263.5 81.5v15" stroke="#0b766c" stroke-width="3" stroke-linecap="round"/>
+  <text x="244" y="140" fill="#172b2a" font-family="Arial,sans-serif" font-size="22" font-weight="700">Join the team</text>
+  <text x="244" y="160" fill="#71817c" font-family="Arial,sans-serif" font-size="11">Sign up to volunteer at WebFest.</text>
+  <text x="244" y="192" fill="#435552" font-family="Arial,sans-serif" font-size="10" font-weight="700">YOUR NAME</text>
+  <rect x="244" y="201" width="312" height="37" rx="7" fill="#fff" stroke="#dce6e1" stroke-width="2"/>
+  <text x="257" y="224" fill="#9aa9a2" font-family="Arial,sans-serif" font-size="11">Name</text>
+  <text x="244" y="263" fill="#435552" font-family="Arial,sans-serif" font-size="10" font-weight="700">EMAIL ADDRESS</text>
+  <rect x="244" y="272" width="312" height="37" rx="7" fill="#fff" stroke="#dce6e1" stroke-width="2"/>
+  <text x="257" y="295" fill="#9aa9a2" font-family="Arial,sans-serif" font-size="11">you@example.com</text>
+  <text x="244" y="334" fill="#435552" font-family="Arial,sans-serif" font-size="10" font-weight="700">PREFERRED CAMPUS</text>
+  <rect x="244" y="346" width="14" height="14" rx="7" fill="#0b766c"/>
+  <circle cx="251" cy="353" r="3" fill="#fff"/>
+  <text x="265" y="358" fill="#435552" font-family="Arial,sans-serif" font-size="11">North campus</text>
+  <circle cx="391" cy="353" r="7" fill="#fff" stroke="#b7c5be" stroke-width="2"/>
+  <text x="405" y="358" fill="#435552" font-family="Arial,sans-serif" font-size="11">Islamabad</text>
+  <rect x="244" y="383" width="312" height="42" rx="8" fill="#0b766c"/>
+  <text x="350" y="409" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">Sign me up</text>
+</svg>

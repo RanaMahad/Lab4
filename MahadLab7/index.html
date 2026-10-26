@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header class="calculator-header">
+      <h1 id="page-title">Calculator</h1>
+      <div class="menu">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open calculator options" aria-expanded="false" aria-haspopup="true">...</button>
+        <nav class="menu-options" id="menu-options" aria-label="Calculator options" hidden>
+          <button type="button" data-view="calculator">Calculator</button>
+          <button type="button" data-view="unit">Unit Conversion</button>
+          <button type="button" data-view="currency">Currency Conversion</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="view" id="calculator-view" aria-labelledby="page-title">
+      <div class="display" id="display" aria-live="polite" aria-label="Calculator display">0</div>
+      <div class="keypad" aria-label="Calculator keys">
+        <button class="utility" type="button" data-action="clear">AC</button>
+        <button class="utility" type="button" data-action="delete" aria-label="Delete last digit">DEL</button>
+        <button class="operator" type="button" data-operator="÷" aria-label="Divide">÷</button>
+        <button class="operator" type="button" data-operator="×" aria-label="Multiply">×</button>
+        <button type="button" data-digit="7">7</button>
+        <button type="button" data-digit="8">8</button>
+        <button type="button" data-digit="9">9</button>
+        <button class="operator" type="button" data-operator="−" aria-label="Subtract">−</button>
+        <button type="button" data-digit="4">4</button>
+        <button type="button" data-digit="5">5</button>
+        <button type="button" data-digit="6">6</button>
+        <button class="operator" type="button" data-operator="+" aria-label="Add">+</button>
+        <button type="button" data-digit="1">1</button>
+        <button type="button" data-digit="2">2</button>
+        <button type="button" data-digit="3">3</button>
+        <button class="equals" type="button" data-action="equals" aria-label="Calculate">=</button>
+        <button class="zero" type="button" data-digit="0">0</button>
+        <button type="button" data-action="decimal">.</button>
+      </div>
+    </section>
+
+    <section class="view converter" id="unit-view" aria-labelledby="page-title" hidden>
+      <label for="unit-category">Measurement</label>
+      <select id="unit-category">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+      </select>
+      <div class="conversion-fields">
+        <label>From
+          <input id="unit-value" type="number" step="any" value="1">
+          <select id="unit-from" aria-label="Convert from unit"></select>
+        </label>
+        <span class="conversion-arrow" aria-hidden="true">→</span>
+        <label>To
+          <input id="unit-result" type="text" readonly aria-label="Converted value">
+          <select id="unit-to" aria-label="Convert to unit"></select>
+        </label>
+      </div>
+      <p class="result-note" id="unit-note" aria-live="polite"></p>
+    </section>
+
+    <section class="view converter" id="currency-view" aria-labelledby="page-title" hidden>
+      <div class="conversion-fields">
+        <label>From
+          <input id="currency-value" type="number" step="any" value="1">
+          <select id="currency-from" aria-label="Convert from currency"></select>
+        </label>
+        <span class="conversion-arrow" aria-hidden="true">→</span>
+        <label>To
+          <input id="currency-result" type="text" readonly aria-label="Converted amount">
+          <select id="currency-to" aria-label="Convert to currency"></select>
+        </label>
+      </div>
+      <p class="result-note" aria-live="polite">Uses fixed sample rates for demonstration; not live exchange rates.</p>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
